@@ -51,7 +51,9 @@ while max(player_scores) < max_score:
                 print("You rolled a",roll_value,"...You are currently at",current_turn,"for this turn.")
                 print("If you stopped now, you would be at",player_scores[player_idx]+current_turn)
                 
-
+winner_idx = player_scores.index(max(player_scores))
+print("Player",winner_idx+1,"wins with a score of",player_scores[winner_idx])
+print(player_scores)
             
 
 

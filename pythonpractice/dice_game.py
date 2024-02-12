@@ -33,9 +33,8 @@ player_scores = [0 for _ in range(get_players)]
 
 
 while max(player_scores) < max_score:
-    for player_idx in player_scores:
+    for player_idx in range(len(player_scores)):
         current_turn = 0
-        print(player_idx)
         print("\nPlayer: ",player_idx+1,"\nCurrent Score: ",player_scores[player_idx])
         while True:
             roll_status = input("Would you like to roll? (y): ")
